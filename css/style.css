@@ -1,0 +1,23 @@
+
+* {
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*.wrapper {
+	max-width: 980px;
+	margin: 0 auto;
+}*/
+
+
+
+
