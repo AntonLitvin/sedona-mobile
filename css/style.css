@@ -13,10 +13,86 @@ img {
 	max-width: 100%;
 }
 
-/*.wrapper {
-	max-width: 980px;
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+.wrapper {
+	max-width: 320px;
 	margin: 0 auto;
-}*/
+}
+
+.main-nav {
+	position: relative;
+}
+
+.main-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.main-nav li {
+	text-align: center;
+	background: #81b3d2;
+	border-top:1px solid #9ac2db;
+	border-bottom: 1px solid #678fa8;
+}
+
+.main-nav .state-map {
+	border-top:none;
+}
+
+.main-nav .hotels {
+	box-shadow: inset 0 -12px 10px -10px #678fa8;
+}
+
+.main-nav a {
+	display: block;
+	padding: 16px 0px;
+	text-decoration: none;
+	font-size: 18px;
+	color:#fff;
+}
+
+.main-nav-close {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	font-size: 0;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	top:12px;
+	right: 15px;
+	background: transparent;
+}
+
+.main-nav-close:before,
+.main-nav-close:after {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 4px;
+	background: #fff;
+
+}
+
+.main-nav-close:before {
+	transform: rotate(45deg);
+	top: 13px;
+	left: 0;
+}
+
+.main-nav-close:after {
+	transform: rotate(-45deg);
+	top: 13px;
+	left: 0;
+}
 
 
 
