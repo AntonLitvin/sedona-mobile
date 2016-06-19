@@ -27,13 +27,37 @@ html, body {
 
 .main-nav {
 	position: relative;
+	min-height: 60px;
+		margin-top: 227px;
 }
 
-.main-nav ul {
+.main-nav-open {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	top:15px;
+	right: 16px;
+	background: url(../images/open-menu-logo.png) no-repeat top center;
+}
+
+.header-logo {
+	position: absolute;
+	top:0;
+	left:50%;
+	margin-left: -69px;
+}
+
+.main-nav .modal-menu {
+	position: absolute;
+	width: 320px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	text-transform: uppercase;
+	top:-227px;
+	// display: none;
 }
 
 .main-nav li {
@@ -59,6 +83,8 @@ html, body {
 	color:#fff;
 }
 
+/*========== close menu button ===========*/
+
 .main-nav-close {
 	position: absolute;
 	width: 30px;
@@ -79,7 +105,6 @@ html, body {
 	width: 30px;
 	height: 4px;
 	background: #fff;
-
 }
 
 .main-nav-close:before {
@@ -93,6 +118,36 @@ html, body {
 	top: 13px;
 	left: 0;
 }
+
+
+/*============= header ===============*/
+
+.header-photo {
+	text-align: center;
+	background: url(../images/corners-bottom.png) no-repeat center bottom,
+				url(../images/canyon.jpg) no-repeat top center;
+	background-size: 768px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+}
+
+.header-photo .main-logo {
+	width: 200px;
+}
+
+.header-photo .header-slogan {
+	width: 200px;
+}
+
+.header-photo h1 {
+	font-weight: bold;
+	font-size: 60px;
+	color:#fff;
+}
+
+
+
 
 
 
