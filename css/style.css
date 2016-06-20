@@ -28,7 +28,11 @@ html, body {
 .main-nav {
 	position: relative;
 	min-height: 60px;
-		margin-top: 227px;
+	margin-top: 0;
+}
+
+.main-nav-active {
+	margin-top: 227px;
 }
 
 .main-nav-open {
@@ -57,7 +61,11 @@ html, body {
 	margin: 0;
 	padding: 0;
 	top:-227px;
-	// display: none;
+	display: none;
+}
+
+.main-nav .modal-menu-open {
+	display: block;
 }
 
 .main-nav li {
@@ -80,6 +88,7 @@ html, body {
 	padding: 16px 0px;
 	text-decoration: none;
 	font-size: 18px;
+	font-weight: bold;
 	color:#fff;
 }
 
