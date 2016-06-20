@@ -10,8 +10,8 @@ menuOpenBtn.addEventListener("click", function(event) {
 		modalMenu.classList.remove("modal-menu-open");
 		mainNav.classList.remove("main-nav-active");
 	} else {
-	modalMenu.classList.add("modal-menu-open");
-	mainNav.classList.add("main-nav-active");
+		modalMenu.classList.add("modal-menu-open");
+		mainNav.classList.add("main-nav-active");
 	}
 
 });

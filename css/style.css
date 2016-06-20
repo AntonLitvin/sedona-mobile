@@ -62,37 +62,45 @@ html, body {
 	padding: 0;
 	top:-227px;
 	display: none;
+	transition: all 1s;
 }
 
 .main-nav .modal-menu-open {
 	display: block;
-}
-
-.main-nav li {
-	text-align: center;
-	background: #81b3d2;
-	border-top:1px solid #9ac2db;
-	border-bottom: 1px solid #678fa8;
-}
-
-.main-nav .state-map {
-	border-top:none;
-}
-
-.main-nav .hotels {
-	box-shadow: inset 0 -12px 10px -10px #678fa8;
+	transition: all 1s;
 }
 
 .main-nav a {
 	display: block;
+	text-align: center;
 	padding: 16px 0px;
 	text-decoration: none;
 	font-size: 18px;
 	font-weight: bold;
 	color:#fff;
+	background: #81b3d2;
+	border-top:1px solid #9ac2db;
+	border-bottom: 1px solid #678fa8;
 }
 
-/*========== close menu button ===========*/
+.main-nav .state-map a {
+	border-top:none;
+}
+
+.main-nav .hotels a {
+	box-shadow: inset 0 -12px 10px -10px #678fa8;
+}
+
+.main-nav li:hover a {
+	background: #669ec0;
+}
+
+.main-nav li:active a {
+	background: #5496bd;
+	color: #88b6d1;
+}
+
+/*========== close menu button with pseudo) ===========*/
 
 .main-nav-close {
 	position: absolute;
@@ -106,6 +114,10 @@ html, body {
 	right: 15px;
 	background: transparent;
 }
+
+// .main-nav-close:active {
+// 	background: #ccc;
+// }
 
 .main-nav-close:before,
 .main-nav-close:after {
