@@ -27,6 +27,9 @@ html, body {
 	position: relative;
 }
 
+
+/*============ MAIN NAVIGATION ===============*/
+
 .main-nav {
 	position: relative;
 	min-height: 60px;
@@ -56,7 +59,7 @@ html, body {
 	margin-left: -69px;
 }
 
-.main-nav .modal-menu {
+.modal-menu {
 	position: absolute;
 	width: 320px;
 	list-style: none;
@@ -64,11 +67,11 @@ html, body {
 	display: none;
 }
 
-.main-nav .modal-menu-open {
+.modal-menu-open {
 	display: block;
 }
 
-.main-nav a {
+.modal-menu a {
 	display: block;
 	text-align: center;
 	padding: 16px 0px;
@@ -81,19 +84,19 @@ html, body {
 	border-bottom: 1px solid #678fa8;
 }
 
-.main-nav .state-map a {
+.info a {
 	border-top:none;
 }
 
-.main-nav .hotels a {
+.hotels a {
 	box-shadow: inset 0 -12px 10px -10px #678fa8;
 }
 
-.main-nav li:hover a {
+.modal-menu li:hover a {
 	background: #669ec0;
 }
 
-.main-nav li:active a {
+.modal-menu li:active a {
 	background: #5496bd;
 	color: #88b6d1;
 }
@@ -140,7 +143,7 @@ html, body {
 
 /*============= HEADER ===============*/
 
-.header-photo {
+.header-bg {
 	text-align: center;
 	background: url(../images/corners-bottom.png) no-repeat center bottom,
 				url(../images/canyon-bg.jpg) no-repeat top center;
@@ -157,11 +160,13 @@ html, body {
 	width: 200px;
 }
 
-.header-photo h1 {
+.header-bg h1 {
 	font-weight: bold;
 	font-size: 60px;
 	color:#fff;
 }
+
+/*====== MAIN block ( Promo block ) ======*/
 
 .promo-header {
 	text-align: center;
@@ -254,7 +259,7 @@ html, body {
 	font-size:20px;
 }
 
-.promo-2-main span {
+.promo2-main span {
 	font-size:14px;
 }
 
@@ -385,7 +390,7 @@ html, body {
 	margin-right: 60px;
 }
 
-.search-hotel-form .submit-btn {
+.submit-btn {
 	clear: both;
 	width: 100%;
 	font-size: 21px;
@@ -397,16 +402,16 @@ html, body {
 	cursor: pointer;
 	background: #81b3d2;
 	text-transform: uppercase;
+	outline: none;
 	transition: all 0.3s;
 }
 
-.search-hotel-form .submit-btn:hover {
+.submit-btn:hover {
 	background: #669ec0;
 }
 
-.search-hotel-form .submit-btn:active {
+.submit-btn:active {
 	color: #88b6d1;
-	outline: none;
 }
 
 .map {
