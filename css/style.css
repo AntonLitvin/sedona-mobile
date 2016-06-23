@@ -21,7 +21,7 @@ html, body {
 }
 
 .wrapper {
-	/*min-width: 320px;*/
+	// min-width: 320px;
 	max-width: 320px;
 	margin: 0 auto;
 	position: relative;
@@ -143,7 +143,7 @@ html, body {
 .header-photo {
 	text-align: center;
 	background: url(../images/corners-bottom.png) no-repeat center bottom,
-				url(../images/canyon.jpg) no-repeat top center;
+				url(../images/canyon-bg.jpg) no-repeat top center;
 	background-size: 768px;
 	padding-top: 40px;
 	padding-bottom: 40px;
@@ -185,7 +185,7 @@ html, body {
 	color:#fff;
 	text-align: center;
 	padding:70px 30px 35px;
-	background: #81b3d2 url(../images/corners-bottom-3.png) no-repeat center top;
+	background: #81b3d2 url(../images/corners-bottom-2.png) no-repeat center top;
 }
 
 .promo1-main h2 {
@@ -206,7 +206,7 @@ html, body {
 
 .promo1-img-block {
 	font-size: 0;
-	max-height: 255px;
+	max-height: 260px;
 	overflow: hidden;
 }
 
@@ -343,6 +343,7 @@ html, body {
 	background: #f2f2f2 url(../images/calendar.png) no-repeat 97% center;
 	border:none;
 	font-weight: bold;
+	transition: all 0.3s;
 }
 
 .search-hotel-form input[type="number"] {
@@ -353,6 +354,19 @@ html, body {
 	display: inline-block;
 	margin: 10px 0 30px 0;
 	font-weight: bold;
+	transition: 0.3s;
+}
+
+.search-hotel-form input[type="date"]:hover,
+.search-hotel-form input[type="number"]:hover {
+	background-color: #ebebeb;
+}
+
+.search-hotel-form input[type="date"]:focus,
+.search-hotel-form input[type="number"]:focus {
+	background-color: #fff;
+	border:1px solid #e5e5e5;
+	outline: none;
 }
 
 .search-hotel-form .adult {
@@ -371,7 +385,7 @@ html, body {
 	margin-right: 60px;
 }
 
-.search-hotel-form input[type="submit"] {
+.search-hotel-form .submit-btn {
 	clear: both;
 	width: 100%;
 	font-size: 21px;
@@ -383,6 +397,25 @@ html, body {
 	cursor: pointer;
 	background: #81b3d2;
 	text-transform: uppercase;
+	transition: all 0.3s;
+}
+
+.search-hotel-form .submit-btn:hover {
+	background: #669ec0;
+}
+
+.search-hotel-form .submit-btn:active {
+	color: #88b6d1;
+	outline: none;
+}
+
+.map {
+	overflow: hidden;
+	height: 560px;
+}
+
+.map img {
+	max-width:none;
 }
 
 /*============ FOOTER ============*/
@@ -392,7 +425,7 @@ html, body {
 	bottom: 0;
 	width: 100%;
 	padding: 15px 0;
-	background: rgba(255, 255, 255, 0.9);
+	background: rgba(255, 255, 255, 0.8);
 }
 
 .visitsedona {
@@ -415,18 +448,41 @@ html, body {
 	height: 48px;
 	cursor: pointer;
 	background: #81b3d2 url(../images/social-sprite.png) no-repeat;
+	transition:0.3s;
 }
 
 .social .social-tw {
 	background-position: 0 0;
 }
-
-.social .social-fb {
-	background-position: -46px 0;
+.social .social-tw:hover {
+	background-position: 0 -56px;
+	opacity: 0.9;
 }
-
+.social .social-tw:active {
+	opacity: 1;
+	// background-position: 0 -112px;
+}
+.social .social-fb {
+	background-position: -53px 0;
+}
+.social .social-fb:hover {
+	background-position: -53px -56px;
+	opacity: 0.9;
+}
+.social .social-fb:active {
+	// background-position: -53px -112px;
+	opacity: 1;
+}
 .social .social-yt {
-	background-position: -92px 0;
+	background-position: -105px 0;
+}
+.social .social-yt:hover {
+	background-position: -105px -56px;
+	opacity: 0.9;
+}
+.social .social-yt:active {
+	// background-position: -105px -112px;
+	opacity: 1;
 }
 
 .copyright {
@@ -439,23 +495,34 @@ html, body {
 
 .copyright b {
 	display: inline-block;
-	margin-top: 5px;
-	margin-right: 10px;
+	margin-right: 12px;
 	vertical-align: top;
 }
 
-.Glukhanko {
+.copyright a {
 	display: inline-block;
-	width: 27px;
-	height: 30px;
-	background: url(../images/Glukhanko.png) no-repeat;
-	margin-right: 6px
-}
-
-.Academy {
-	display: inline-block;
+	margin-right: 8px;
 	width: 27px;
 	height: 33px;
-	background: url(../images/Academy.png) no-repeat;
-	margin-right: 6px
+	background: url(../images/copyright-sprite.png) no-repeat;
 }
+
+.copyright .created-by {
+	background-position: 0 0px;
+}
+.created-by:hover {
+	background-position: 0 -46px;
+}
+.created-by:active {
+	background-position: 0 -94px;
+}
+.copyright .created-for {
+	background-position: -31px 0;
+}
+.created-for:hover {
+	background-position: -31px -46px;
+}
+.created-for:active {
+	background-position: -31px -94px;
+}
+
