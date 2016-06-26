@@ -1,3 +1,5 @@
+(function() {
+
 var menuOpenBtn = document.querySelector(".main-nav-open");
 var menuCloseBtn = document.querySelector(".main-nav-close");
 var modalMenu = document.querySelector(".modal-menu");
@@ -24,6 +26,53 @@ menuCloseBtn.addEventListener("click", function(event) {
 	menuOpenBtn.classList.remove("active");
 
 });
+
+})();
+
+(function() {
+	
+var link = document.querySelector(".search-hotel");
+var popup = document.querySelector(".search-hotel-modal");
+var close = popup.querySelector(".search-close");
+
+var overlay = document.querySelector(".modal-overlay");
+
+link.addEventListener("click", function(event) {
+event.preventDefault();
+
+overlay.classList.add("modal-overlay-show");
+popup.classList.add("search-hotel-show");
+
+});
+
+close.addEventListener("click", function(event) {
+event.preventDefault();
+
+popup.classList.remove("search-hotel-show");
+overlay.classList.remove("modal-overlay-show");
+});
+
+window.addEventListener("keydown", function(event) {
+	if (event.keyCode === 27) {
+		if (popup.classList.contains("search-hotel-show")) {
+			popup.classList.remove("search-hotel-show");
+			overlay.classList.remove("modal-overlay-show");
+		}
+	}
+});
+
+
+overlay.addEventListener("click", function(event) {
+event.preventDefault();
+
+popup.classList.remove("search-hotel-show");
+overlay.classList.remove("modal-overlay-show");
+
+});
+	
+})();
+
+
 
 
 
