@@ -208,7 +208,6 @@ html, body {
 	margin-top: 10px;
 	font-size:14px;
 	line-height: 24px;
-	color:#333;
 }
 
 .promo1-img-block {
@@ -219,6 +218,7 @@ html, body {
 
 .promo1-desc {
 	padding: 25px 20px;
+	color:#333;
 }
 
 .promo1-desc h2 {
@@ -678,7 +678,7 @@ html, body {
 .choose-hotel {
 	padding: 30px 100px 30px;
 }
-	
+
 .search-hotel {
 	display: block;
 	width: 500px;
@@ -688,7 +688,7 @@ html, body {
 	background: #766357;
 	font-weight: bold;
 	font-size: 18px;
-	margin: 27px auto 0 auto;
+	margin: 25px auto 0 auto;
 	text-decoration: none;
 }
 	
