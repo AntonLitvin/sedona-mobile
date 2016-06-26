@@ -63,7 +63,7 @@ html, body {
 
 .modal-menu {
 	position: absolute;
-	width: 320px;
+	width: 100%;
 	list-style: none;
 	top:-227px;
 	display: none;

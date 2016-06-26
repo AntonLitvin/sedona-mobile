@@ -1,3 +1,5 @@
+//================ Mobile main manu open-close
+
 (function() {
 
 var menuOpenBtn = document.querySelector(".main-nav-open");
@@ -23,17 +25,19 @@ menuCloseBtn.addEventListener("click", function(event) {
 
 	modalMenu.classList.remove("modal-menu-open");
 	mainNav.classList.remove("main-nav-active");
-	menuOpenBtn.classList.remove("active");
 
 });
 
 })();
 
+// ================= Search form open-close
+
 (function() {
-	
+
 var link = document.querySelector(".search-hotel");
 var popup = document.querySelector(".search-hotel-modal");
 var close = popup.querySelector(".search-close");
+var submitClose = popup.querySelector(".submit-btn");
 
 var overlay = document.querySelector(".modal-overlay");
 
@@ -62,6 +66,15 @@ window.addEventListener("keydown", function(event) {
 });
 
 
+submitClose.addEventListener("click", function(event) {
+event.preventDefault();
+
+popup.classList.remove("search-hotel-show");
+overlay.classList.remove("modal-overlay-show");
+
+});
+
+
 overlay.addEventListener("click", function(event) {
 event.preventDefault();
 
@@ -69,14 +82,5 @@ popup.classList.remove("search-hotel-show");
 overlay.classList.remove("modal-overlay-show");
 
 });
-	
+
 })();
-
-
-
-
-
-
-
-
-
