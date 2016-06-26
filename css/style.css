@@ -598,20 +598,22 @@ html, body {
 	background: #81b3d2;
 	float: left;
 	width: 30%;
+	min-height: 225px;
 }
 
 .promo1-img-block{
-	max-height: 224px;
+	max-height: 225px;
 }
 
 .promo2-main {
 	padding:30px;
 	float: right;
 	width: 30%;
+	min-height: 225px;
 }
 
 .promo2-img-block{
-	max-height: 224px;
+	max-height: 225px;
 }
 
 .promo1-desc {
