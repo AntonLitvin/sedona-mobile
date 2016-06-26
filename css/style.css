@@ -22,7 +22,7 @@ html, body {
 
 .wrapper {
 	// min-width: 320px;
-	max-width: 320px;
+	max-width: 767px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -346,7 +346,7 @@ html, body {
 	padding: 7px 7px 7px 15px;
 	margin: 10px 0 30px 0;
 	background: #f2f2f2 url(../images/calendar.png) no-repeat 97% center;
-	border:none;
+	border:1px solid #f2f2f2;
 	font-weight: bold;
 	transition: all 0.3s;
 }
@@ -355,7 +355,7 @@ html, body {
 	width: 80%;
 	padding: 7px 7px 7px 35% ;
 	background: #f2f2f2;
-	border:none;
+	border:1px solid #f2f2f2;
 	display: inline-block;
 	margin: 10px 0 30px 0;
 	font-weight: bold;
@@ -531,3 +531,151 @@ html, body {
 	background-position: -31px -94px;
 }
 
+
+/*==============  M E D I A  ================*/
+
+
+@media screen and ( min-width:768px ) {
+
+.main-nav {
+	min-height: auto;
+}
+
+.main-nav-open,
+.main-nav-close {
+	display: none;
+}
+
+.modal-menu {
+	position: static;
+	display: block;
+	width: auto;
+}
+
+.modal-menu li {
+	float:left;
+	border:none;
+	width: 20%;
+}
+
+.modal-menu .photo {
+	margin-right: 20%;
+}
+
+.modal-menu a {
+	display: block;
+	text-align: center;
+	padding: 20px 0;
+	font-size: 14px;
+	color:#000;
+	background: #fff;
+	border:none;
+}
+
+.info a {
+	border-top: none;
+}
+
+.hotels a {
+	box-shadow: none;
+}
+
+.modal-menu li:hover a {
+	background: #669ec0;
+}
+
+.modal-menu li:active a {
+	background: #5496bd;
+	color: #88b6d1;
+}
+
+.promo-header {
+	padding-bottom: 30px;
+}
+
+.promo1-main {
+	padding:30px;
+	background: #81b3d2;
+	float: left;
+	width: 30%;
+}
+
+.promo1-img-block{
+	max-height: 224px;
+}
+
+.promo2-main {
+	padding:30px;
+	float: right;
+	width: 30%;
+}
+
+.promo2-img-block{
+	max-height: 224px;
+}
+
+.promo1-desc {
+	padding: 0;
+}
+
+.promo1-desc > div {
+	float:left;
+	width:33%;
+	text-align: center;
+	padding: 30px 30px 10px;
+}
+
+.promo1 .promo1-desc h2 {
+	padding: 50px 0 10px;
+	background-position: top center;
+}
+
+.promo1-desc p {
+	text-align: center;
+	padding: 0 10px;
+}
+
+.promo3 {
+	padding: 0;
+}
+
+.promo3 > div {
+	padding: 30px;
+	float: left;
+	width: 33%;
+	border-bottom: none;
+}
+
+.contacts {
+	position: relative;
+}
+
+.choose-hotel {
+	padding: 30px 100px 110px;
+}
+
+.search-hotel-modal {
+	position: absolute;
+	background: #fff;
+	width: 500px;
+	z-index: 10;
+	top:135px;
+	left:50%;
+	margin-left: -250px;
+}
+
+.main-footer > div {
+	float: left;
+	width: 33%;
+}
+
+.visitsedona {
+	margin-top: 10px;
+}
+
+.copyright {
+	margin-top: 15px;
+}
+
+
+}
