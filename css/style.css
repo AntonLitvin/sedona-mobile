@@ -22,7 +22,7 @@ html, body {
 
 .wrapper {
 /*	min-width: 320px;*/
-	max-width: 767px;
+	max-width: 1280px;
 	margin: 0 auto;
 	position: relative;
 	box-shadow: 0 0 20px #ccc;
@@ -147,7 +147,7 @@ html, body {
 
 .header-bg {
 	text-align: center;
-	background: url(../images/corners-bottom.png) no-repeat center bottom,
+	background: url(../images/corners-bottom-1280.png) no-repeat center bottom,
 				url(../images/canyon-bg.jpg) no-repeat top center;
 	background-size: 768px;
 	padding-top: 40px;
@@ -558,7 +558,11 @@ html, body {
 /*==============  M E D I A  ================*/
 
 
-@media screen and ( min-width:768px ) {
+@media screen and ( min-width:768px) {
+
+.header-bg {
+	background-size: auto;
+}
 
 .main-nav {
 	min-height: auto;
@@ -665,7 +669,7 @@ html, body {
 }
 
 .promo3 > div {
-	padding: 30px;
+	padding: 30px 20px;
 	float: left;
 	width: 33%;
 	border-bottom: none;
