@@ -571,8 +571,22 @@ html, body {
 @media screen and ( min-width:768px) {
 
 .header-bg {
+	padding-top: 80px;
+	padding-bottom: 80px;
 	background-size: auto;
 	position: relative;
+}
+
+.main-logo {
+	width: auto;
+}
+
+.header-slogan {
+	width: auto;
+}
+
+.header-bg h1 {
+	font-size: 80px;
 }
 
 .main-nav {
@@ -628,7 +642,8 @@ html, body {
 }
 
 .promo-header {
-	padding-bottom: 30px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .promo1-main {
@@ -725,9 +740,13 @@ html, body {
 	margin-left: -250px;
 	display: none;
 }
-	
+
 .search-hotel-show {
 	display: block;
+}
+
+.map img {
+	width: 1280px;
 }
 
 .main-footer > div {
