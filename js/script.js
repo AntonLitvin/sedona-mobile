@@ -1,4 +1,4 @@
-//================ Mobile main manu open-close
+//================ Mobile main menu open-close
 
 (function() {
 
